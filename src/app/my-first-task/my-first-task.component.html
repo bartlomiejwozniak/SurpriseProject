@@ -1,24 +1,34 @@
-<h2 mat-dialog-title>Zadanie 1</h2>
+<h2 mat-dialog-title>{{data.task.title}}</h2>
 <mat-dialog-content [formGroup]="form">
 
-  <mat-form-field>
-    <input matInput placeholder="Input" formControlName="description">
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput placeholder="Input" formControlName="description">
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput placeholder="Input" formControlName="description">
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput placeholder="Input" formControlName="description">
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput placeholder="Input" formControlName="description">
-  </mat-form-field>
+  <div class="row">
+    <mat-form-field class="input-full-width">
+      <input matInput placeholder="Podaj rok w którym się poznaliśmy?" formControlName="year">
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <mat-form-field class="input-full-width">
+      <input matInput placeholder="Jak nazywa się klub w którym się poznaliśmy?" formControlName="club">
+    </mat-form-field>
+  </div>
+
+
+  <div class="row">
+    <mat-form-field class="input-full-width">
+      <input matInput placeholder="Jak nazywa się restuaracja do której zabrałem Cię na Dzień Kobiet?" formControlName="restaurant">
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <mat-form-field class="input-full-width">
+      <input matInput placeholder="Jak nazywa się miejscowość do której pojechaliśmy pierwszy raz na weekend?" formControlName="city">
+    </mat-form-field>
+  </div>
+
 </mat-dialog-content>
 
 
 <mat-dialog-actions>
-  <button mat-raised-button (click)="closeDialog()">Zatwierdź</button>
+  <button mat-raised-button (click)="closeDialog()" class="btn btn-info btn-lg active">Zatwierdź</button>
 </mat-dialog-actions>
