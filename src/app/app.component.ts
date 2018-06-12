@@ -3,6 +3,8 @@ import {MatDialog, MatDialogConfig} from "@angular/material";
 import {MyFirstTaskComponent} from "./my-first-task/my-first-task.component";
 import {Task} from "./task";
 import {MySecondTaskComponent} from "./my-second-task/my-second-task.component";
+import {MyThirdTaskComponent} from "./my-third-task/my-third-task.component";
+import {MyForthTaskComponent} from "./my-forth-task/my-forth-task.component";
 
 @Component({
   selector: 'app-root',
@@ -24,8 +26,8 @@ export class AppComponent {
     this.tasks[1].title = "Zadanie 2 - Labirynt!";
     this.tasks[1].validDate = new Date("June 12, 2018 14:00:00");
     this.tasks[2] = new Task();
-    this.tasks[2].title = "HEJ!";
-    this.tasks[2].validDate = new Date("June 13, 2018 20:00:00");
+    this.tasks[2].title = "Zadanie 2 - Zdjęcia!";
+    this.tasks[2].validDate = new Date("June 12, 2018 20:00:00");
     this.tasks[3] = new Task();
     this.tasks[3].title = "HEJ!";
     this.tasks[3].validDate = new Date("June 14, 2018 20:00:00");
@@ -49,14 +51,14 @@ export class AppComponent {
   }
 
   openDialog3() {
-    this.dialog.open(MyFirstTaskComponent, {
+    this.dialog.open(MyThirdTaskComponent, {
       width:'600px',
       data: { task: this.tasks[2] }
     });
   }
 
   openDialog4() {
-    this.dialog.open(MyFirstTaskComponent, {
+    this.dialog.open(MyForthTaskComponent, {
       width:'600px',
       data: { task: this.tasks[3] }
     });

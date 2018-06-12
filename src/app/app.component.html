@@ -30,15 +30,21 @@
       </a>
       <a (click)="openDialog3()" class="btn btn-info btn-lg mybutton {{tasks[2].validDate < currentDate ? 'active' : 'notactive'}}">
         Zadanie 3
-        <p style="font-size: 10px;">Dostępne od <br>{{tasks[2].validDate | date :  "dd.MM.y HH:mm"}}</p>
+        <div *ngIf="tasks[2].validDate > currentDate">
+          <p style="font-size: 10px;">Dostępne od <br>{{tasks[2].validDate | date :  "dd.MM.y HH:mm"}}</p>
+        </div>
       </a>
       <a (click)="openDialog4()" class="btn btn-info btn-lg mybutton {{tasks[3].validDate < currentDate ? 'active' : 'notactive'}}">
         Zadanie 4
-        <p style="font-size: 10px;">Dostępne od <br>{{tasks[3].validDate | date :  "dd.MM.y HH:mm"}}</p>
+        <div *ngIf="tasks[3].validDate > currentDate">
+          <p style="font-size: 10px;">Dostępne od <br>{{tasks[3].validDate | date :  "dd.MM.y HH:mm"}}</p>
+        </div>
       </a>
       <a (click)="openDialog5()" class="btn btn-info btn-lg mybutton {{tasks[4].validDate < currentDate ? 'active' : 'notactive'}}">
         Zadanie 5
-        <p style="font-size: 10px;">Dostępne od <br>{{tasks[4].validDate | date :  "dd.MM.y HH:mm"}}</p>
+        <div *ngIf="tasks[4].validDate > currentDate">
+          <p style="font-size: 10px;">Dostępne od <br>{{tasks[4].validDate | date :  "dd.MM.y HH:mm"}}</p>
+        </div>
       </a>
     </p>
 

@@ -1,0 +1,27 @@
+<h2 mat-dialog-title>{{data.task.title}}</h2>
+<mat-dialog-content [formGroup]="form">
+  <div class="row">
+    <p>
+      Twoje kolejne zadanie nie jest łatwe- wymaga dobrej pamięci do miejsc i jedzenia!
+    </p>
+  </div>
+  <img src="assets/Images/places.png" style="width: 70%;" alt="Miejsca">
+  <div class="row">
+    <mat-form-field class="input-full-width">
+      <input matInput placeholder="Podaj 3 miasta w których zostały zrobione te zdjęcia." formControlName="places">
+    </mat-form-field>
+  </div>
+
+  <img src="assets/Images/restaurants.png" style="width: 70%;" alt="Restuaracje">
+  <div class="row">
+    <mat-form-field class="input-full-width">
+      <input matInput placeholder="Podaj nazwy 4 resturacji w których zostały zrobione te zdjęcia. " formControlName="restaurants">
+    </mat-form-field>
+  </div>
+
+</mat-dialog-content>
+
+
+<mat-dialog-actions>
+  <button mat-raised-button (click)="closeDialog()" class="btn btn-info btn-lg active">Zatwierdź</button>
+</mat-dialog-actions>

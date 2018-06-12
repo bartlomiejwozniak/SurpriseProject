@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { MyFirstTaskComponent } from './my-first-task/my-first-task.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MySecondTaskComponent } from './my-second-task/my-second-task.component';
+import { MyThirdTaskComponent } from './my-third-task/my-third-task.component';
+import { MyForthTaskComponent } from './my-forth-task/my-forth-task.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MyFirstTaskComponent,
-    MySecondTaskComponent
+    MySecondTaskComponent,
+    MyThirdTaskComponent,
+    MyForthTaskComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +26,7 @@ import { MySecondTaskComponent } from './my-second-task/my-second-task.component
     ReactiveFormsModule,
     MatInputModule,
   ],
-  entryComponents: [MyFirstTaskComponent, MySecondTaskComponent],
+  entryComponents: [MyFirstTaskComponent, MySecondTaskComponent, MyThirdTaskComponent, MyForthTaskComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
