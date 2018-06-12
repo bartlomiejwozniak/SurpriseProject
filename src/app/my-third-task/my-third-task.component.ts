@@ -19,14 +19,14 @@ export class MyThirdTaskComponent {
 
   public closeDialog(){
     var result = true;
-    if(this.form.value.places != null && this.replace(this.form.value.places).indexOf('bydgoszcz') >= 0
-      && this.replace(this.form.value.places).indexOf('warszawa') >= 0 && this.replace(this.form.value.places).indexOf('zakopane') >= 0) {
+    if(this.form.value.places != null && this.replace(this.form.value.places).indexOf('bydgoszcz') < 0
+      && this.replace(this.form.value.places).indexOf('warszawa') < 0 && this.replace(this.form.value.places).indexOf('zakopane') < 0) {
       alert('Nie podałać 3 prawidłowych miast. Zawsze możesz zadzwonić do przyjaciela!')
       result = false;
       return;
     }
-    if(this.form.value.restaurants != null && this.replace(this.form.value.restaurants).indexOf('cma') >= 0 && this.replace(this.form.value.restaurants).indexOf('grand') >= 0
-      && this.replace(this.form.value.restaurants).indexOf('fusion') >= 0 && this.replace(this.form.value.restaurants).indexOf('rozana') >= 0) {
+    if(this.form.value.restaurants != null && this.replace(this.form.value.restaurants).indexOf('cma') < 0 && this.replace(this.form.value.restaurants).indexOf('grand') < 0
+      && this.replace(this.form.value.restaurants).indexOf('fusion') < 0 && this.replace(this.form.value.restaurants).indexOf('rozana') < 0) {
       alert('Nie podałać 4 prawidłowych restauracji. Zawsze możesz zadzwonić do przyjaciela!')
       result = false;
       return;

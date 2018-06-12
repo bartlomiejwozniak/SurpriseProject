@@ -27,7 +27,7 @@ export class AppComponent {
     this.tasks[1].validDate = new Date("June 12, 2018 14:00:00");
     this.tasks[2] = new Task();
     this.tasks[2].title = "Zadanie 2 - Zdjęcia!";
-    this.tasks[2].validDate = new Date("June 13, 2018 10:00:00");
+    this.tasks[2].validDate = new Date("June 12, 2018 10:00:00");
     this.tasks[3] = new Task();
     this.tasks[3].title = "HEJ!";
     this.tasks[3].validDate = new Date("June 14, 2018 20:00:00");
