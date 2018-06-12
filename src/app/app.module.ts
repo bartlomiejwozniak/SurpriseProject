@@ -5,12 +5,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { MyFirstTaskComponent } from './my-first-task/my-first-task.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MySecondTaskComponent } from './my-second-task/my-second-task.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyFirstTaskComponent
+    MyFirstTaskComponent,
+    MySecondTaskComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     MatInputModule,
   ],
-  entryComponents: [MyFirstTaskComponent],
+  entryComponents: [MyFirstTaskComponent, MySecondTaskComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>{{data.task.title}}</h2>
+<mat-dialog-content [formGroup]="form">
+  <div class="row">
+    <p>
+      Twoje kolejne zadanie to przejście labiryntu! Musisz mnie znaleźć.
+    </p>
+    <p>
+      Po drodze zbieraj literki. Tylko najkrótsza droga jest najlepsza.
+    </p>
+  </div>
+  <img src="assets/Images/labirynt.png" style="width: 60%;" alt="labirynt">
+  <div class="row">
+    <mat-form-field class="input-full-width">
+      <input matInput placeholder="Podaj hasło" formControlName="result">
+    </mat-form-field>
+  </div>
+
+</mat-dialog-content>
+
+
+<mat-dialog-actions>
+  <button mat-raised-button (click)="closeDialog()" class="btn btn-info btn-lg active">Zatwierdź</button>
+</mat-dialog-actions>
