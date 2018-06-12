@@ -27,7 +27,6 @@
       </a>
       <a (click)="openDialog2()" class="btn btn-info btn-lg mybutton {{tasks[1].validDate < currentDate ? 'active' : 'notactive'}}">
         Zadanie 2
-        <p style="font-size: 10px;">Dostępne od <br>{{tasks[1].validDate | date :  "dd.MM.y HH:mm"}}</p>
       </a>
       <a (click)="openDialog3()" class="btn btn-info btn-lg mybutton {{tasks[2].validDate < currentDate ? 'active' : 'notactive'}}">
         Zadanie 3
