@@ -16,10 +16,10 @@
       Bilet do Azji Express! &#9969;
     </h1>
     <p class="lead">
-      Już za 5 dni Twoje urodziny!
+      Już jutro Twoje urodziny!
     </p>
     <p class="lead">
-      Masz możliwość udziału w Azji Express! Zanim jednak dostaniesz bilet na wyjazd musisz ukończyć jeszcze 5 zadań. Czy jesteś na to gotowa?
+      Masz możliwość udziału w Azji Express! Zanim jednak dostaniesz bilet na wyjazd musisz ukończyć jeszcze 2 zadania. Czy jesteś na to gotowa?
     </p>
     <p class="lead">
       <a (click)="openDialog1()" class="btn btn-info btn-lg mybutton {{tasks[0].validDate < currentDate ? 'active' : 'notactive'}}">
@@ -44,6 +44,12 @@
         Zadanie 5
         <div *ngIf="tasks[4].validDate > currentDate">
           <p style="font-size: 10px;">Dostępne od <br>{{tasks[4].validDate | date :  "dd.MM.y HH:mm"}}</p>
+        </div>
+      </a>
+      <a (click)="openDialog6()" class="btn btn-info btn-lg mybutton {{tasks[5].validDate < currentDate ? 'active' : 'notactive'}}">
+        Wpisz hasło
+        <div *ngIf="tasks[5].validDate > currentDate">
+          <p style="font-size: 10px;">Dostępne od <br>{{tasks[5].validDate | date :  "dd.MM.y HH:mm"}}</p>
         </div>
       </a>
     </p>

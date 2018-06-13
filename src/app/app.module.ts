@@ -8,6 +8,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MySecondTaskComponent } from './my-second-task/my-second-task.component';
 import { MyThirdTaskComponent } from './my-third-task/my-third-task.component';
 import { MyForthTaskComponent } from './my-forth-task/my-forth-task.component';
+import { MyFifthTaskComponent } from './my-fifth-task/my-fifth-task.component';
+import { MyLastTaskComponent } from './my-last-task/my-last-task.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { MyForthTaskComponent } from './my-forth-task/my-forth-task.component';
     MyFirstTaskComponent,
     MySecondTaskComponent,
     MyThirdTaskComponent,
-    MyForthTaskComponent
+    MyForthTaskComponent,
+    MyFifthTaskComponent,
+    MyLastTaskComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,7 @@ import { MyForthTaskComponent } from './my-forth-task/my-forth-task.component';
     ReactiveFormsModule,
     MatInputModule,
   ],
-  entryComponents: [MyFirstTaskComponent, MySecondTaskComponent, MyThirdTaskComponent, MyForthTaskComponent],
+  entryComponents: [MyFirstTaskComponent, MySecondTaskComponent, MyThirdTaskComponent, MyForthTaskComponent, MyFifthTaskComponent, MyLastTaskComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
