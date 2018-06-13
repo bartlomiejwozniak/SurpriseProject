@@ -43,7 +43,6 @@ export class AppComponent {
   openDialog1() {
     this.dialog.open(MyFirstTaskComponent, {
       width:'800px',
-      height: '800px',
       data: { task: this.tasks[0] }
     });
   }
