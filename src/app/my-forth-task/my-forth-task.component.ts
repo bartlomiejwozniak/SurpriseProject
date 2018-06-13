@@ -13,25 +13,37 @@ export class MyForthTaskComponent {
   }
 
   form = new FormGroup({
-    result: new FormControl()
+    winko: new FormControl(),
+    szampan: new FormControl(),
+    pizza: new FormControl()
   });
 
   public closeDialog(){
     var result = true;
-    if(this.form.value.result != null && this.replace(this.form.value.result) != 'niespodzianka') {
-      alert('Błędne hasło! To zadanie nie jest takie łatwe. Zapisz hasło na kartce i pomyśl co jeszcze z nim musisz zrobić :)')
+    if(this.form.value.winko != null && this.replace(this.form.value.winko) != '8') {
+      alert('Tylko jeść, pić, a liczyć to nie ma kto. Tyle winko nie kosztuje! :(')
       result = false;
       return;
     }
-    if(this.form.value.result == null){
-      alert('Oj... Uzupełnij pole:(')
+    if(this.form.value.szampan != null && this.replace(this.form.value.szampan) != '16') {
+      alert('Tylko jeść, pić, a liczyć to nie ma kto. Tyle szampan nie kosztuje! :(')
+      result = false;
+      return;
+    }
+    if(this.form.value.pizza != null && this.replace(this.form.value.pizza) != '6') {
+      alert('Tylko jeść, pić, a liczyć to nie ma kto. Tyle pizza nie kosztuje! :(')
+      result = false;
+      return;
+    }
+    if(this.form.value.winko == null || this.form.value.szampan == null || this.form.value.pizza == null){
+      alert('Tylko jeść, pić, a liczyć to nie ma kto :( Uzupełnij wszystkie pola:(')
       result = false;
       return;
     }
 
     if(result) {
       this.dialogRef.close();
-      alert("Wow! Ukończyłaś drugie zadanie :D Zawsze mogę na Ciebie liczyć! Zdobyłaś drugi znak do tajnego hasła. Znak to: '&'. Zapamiętaj i nikomu go nie podawaj :P");
+      alert("Wow! Ty to jest geniusz matematyczny! <3 Ukończyłaś przedostatnie zadanie- znak to: '4'. Zapamiętaj i nikomu go nie podawaj :P");
     }
   }
 

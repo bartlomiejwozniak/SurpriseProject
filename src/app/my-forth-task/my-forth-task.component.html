@@ -1,3 +1,26 @@
-<p>
-  my-forth-task works!
-</p>
+<h2 mat-dialog-title>{{data.task.title}}</h2>
+<mat-dialog-content [formGroup]="form">
+  <div class="row">
+    <p>
+      Zadanie matematyczne dla naszej Gwiazdy!
+    </p>
+  </div>
+  <img src="assets/Images/game.png" style="width: 70%;" alt="Gra">
+  <div class="row">
+    <mat-form-field class="input-full-width">
+      <input matInput placeholder="Ile kosztuje winko?" formControlName="winko">
+    </mat-form-field>
+    <mat-form-field class="input-full-width">
+      <input matInput placeholder="Ile kosztuje szampan?" formControlName="szampan">
+    </mat-form-field>
+    <mat-form-field class="input-full-width">
+      <input matInput placeholder="Ile kosztuje pizza?" formControlName="pizza">
+    </mat-form-field>
+  </div>
+
+</mat-dialog-content>
+
+
+<mat-dialog-actions>
+  <button mat-raised-button (click)="closeDialog()" class="btn btn-info btn-lg active">Zatwierdź</button>
+</mat-dialog-actions>
