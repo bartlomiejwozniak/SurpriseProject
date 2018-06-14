@@ -1,3 +1,15 @@
-<p>
-  my-last-task works!
-</p>
+<h2 mat-dialog-title>{{data.task.title}}</h2>
+<mat-dialog-content [formGroup]="form">
+
+  <div class="row">
+    <mat-form-field class="input-full-width">
+      <input matInput placeholder="Podaj tajne haslo" formControlName="haslo">
+    </mat-form-field>
+  </div>
+
+</mat-dialog-content>
+
+
+<mat-dialog-actions>
+  <button mat-raised-button (click)="closeDialog()" class="btn btn-info btn-lg active">Zatwierdź</button>
+</mat-dialog-actions>

@@ -34,11 +34,11 @@ export class AppComponent {
     this.tasks[3].title = "Zadanie 4 - To co tygryski lubią najardziej!";
     this.tasks[3].validDate = new Date("June 14, 2018 12:00:00");
     this.tasks[4] = new Task();
-    this.tasks[4].title = "HEJ!";
-    this.tasks[4].validDate = new Date("June 15, 2018 20:00:00");
+    this.tasks[4].title = "Zadanie 5 - Kolejna zagadka jest jeszcze bardziej trudniejsza!";
+    this.tasks[4].validDate = new Date("June 15, 2018 12:00:00");
     this.tasks[5] = new Task();
     this.tasks[5].title = "Wpisz hasło!";
-    this.tasks[5].validDate = new Date("June 15, 2018 20:00:00");
+    this.tasks[5].validDate = new Date("June 15, 2018 19:30:00");
   }
   openDialog1() {
     this.dialog.open(MyFirstTaskComponent, {
